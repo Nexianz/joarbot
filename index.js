@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 
-const TOKEN = "NDM2NDI1Mjk3OTQ5MDk3OTg1.DbnVvg.1YyhQimRTt9u2Jbz6sOYiiiX0Hw";
+const TOKEN = "NDM2NDg3NDcxMTc4NDQ4ODk2.DboOuQ.270l_wFyxxC-ffGDVviELq2I9qM";
 const PREFIX = "-";
-const StartupPrefix = "| JoarBot | "
+const StartupPrefix = "| ScopieBot | "
 
 var fortunes = [
     "https://absurdintellectual.com/wp-content/uploads/2017/02/maxresdefault1.jpg",
@@ -29,9 +29,9 @@ var rates = [
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    console.log(StartupPrefix + "Restarter JoarBot 1.0..");
-    console.log(StartupPrefix + "JoarBot 1.0 restartet!");
-    bot.user.setActivity("donerer til jenter", {type: "PLAYING"});
+    console.log(StartupPrefix + "Restarter ScopieBot 1.0..");
+    console.log(StartupPrefix + "ScopieBot 1.0 restartet!");
+    bot.user.setActivity("Nexi er sexy", {type: "PLAYING"});
 });
 
 bot.on("message", function(message) {
@@ -46,13 +46,12 @@ bot.on("message", function(message) {
         case "hjelp":
         var hjelp = [
             "Mine kommandoer er:",
-            "**▬▬▬▬▬**",
             "**+hjelp** - Viser dette.",
             "**+meme** - Morsomme memes.",
             "**+info** - Informasjon om botten.",
             "**+rate** - Rate en ting."
         ]
-        message.channel.send("Hei " + message.author.toString() + "! Mitt navn er **JoarBot 1.0**")
+        message.channel.send("Hei " + message.author.toString() + "! Mitt navn er **ScopeBOT 1.0**")
         message.channel.send(hjelp);
         break;
             
@@ -62,7 +61,7 @@ bot.on("message", function(message) {
 
         case "test":
         var test = new Discord.RichEmbed()
-        .addField("Kommandoer", "Her er alle kommandoene til JoarBot", true)
+        .addField("Kommandoer", "Her er alle kommandoene til ScopieBOT", true)
         .addField(":bell: Informasjons kommandoer", "-hjelp, -botinfo, -serverinfo", true)
         .addField(":smile: Morsomme kommandoer", "-meme, -rate & mer!", true)
         .setColor(0x00FFFF)
