@@ -51,7 +51,7 @@ bot.on("message", function(message) {
             "**+info** - Informasjon om botten.",
             "**+rate** - Rate en ting."
         ]
-        message.channel.send("Hei " + message.author.toString() + "! Mitt navn er **ScopeBOT 1.0**")
+        message.channel.send("Hei " + message.author.toString() + "! Mitt navn er **ScopieBOT 1.0**")
         message.channel.send(hjelp);
         break;
             
