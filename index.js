@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 const TOKEN = "NDM2NDI1Mjk3OTQ5MDk3OTg1.DbnVvg.1YyhQimRTt9u2Jbz6sOYiiiX0Hw";
-const PREFIX = "+";
+const PREFIX = "-";
 const StartupPrefix = "| JoarBot | "
 
 var fortunes = [
