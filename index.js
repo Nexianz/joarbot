@@ -48,10 +48,10 @@ bot.on("message", function(message) {
             "Mine kommandoer er:",
             "**-hjelp** - Viser dette.",
             "**-meme** - Morsomme memes.",
-            "**-rate** - Rate en ting."
+            "**-rate** - Rate en ting.",
             "**-botinfo** - Informasjon om botten.",
             "**-serverinfo** - Informasjon om serveren.",
-        ];
+        ]
         message.channel.send("Hei " + message.author.toString() + "! Mitt navn er **ScopieBOT 1.0**")
         message.channel.send(hjelp);
         break;
