@@ -1,7 +1,7 @@
 {
-  "name": "joarbot",
+  "name": "scopiebot",
   "version": "1.0.0",
-  "description": "Bot for joar fan klubb",
+  "description": "Bot for Scopie's discord",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
