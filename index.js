@@ -31,7 +31,7 @@ var bot = new Discord.Client();
 bot.on("ready", function() {
     console.log(StartupPrefix + "Restarter ScopieBot 1.0..");
     console.log(StartupPrefix + "ScopieBot 1.0 restartet!");
-    bot.user.setActivity("Nexi er sexy", {type: "PLAYING"});
+    bot.user.setActivity("Scopie sine streams", {type: "PLAYING"});
 });
 
 bot.on("message", function(message) {
@@ -46,10 +46,10 @@ bot.on("message", function(message) {
         case "hjelp":
         var hjelp = [
             "Mine kommandoer er:",
-            "**+hjelp** - Viser dette.",
-            "**+meme** - Morsomme memes.",
-            "**+info** - Informasjon om botten.",
-            "**+rate** - Rate en ting."
+            "**-hjelp** - Viser dette.",
+            "**-meme** - Morsomme memes.",
+            "**-info** - Informasjon om botten.",
+            "**-rate** - Rate en ting."
         ]
         message.channel.send("Hei " + message.author.toString() + "! Mitt navn er **ScopieBOT 1.0**")
         message.channel.send(hjelp);
