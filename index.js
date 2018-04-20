@@ -98,12 +98,6 @@ bot.on("message", function(message) {
         var rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if(!rUser) return message.channel.send("Kunne ikke finne spilleren, bruk **-report (Spiller) (Grunn)**");
         var reason = args.join(" ").slice(22);
-        
-        var reportmsg = new Discord.RichEmbed()
-        .setDescription("Reports")
-        .setColor("0x00FFFF")
-        .addField("Du rapporterte", rUser.get + "med ID" + rUser.id)
-        .addField("Grunn", reason);
 
         var reportembed = new Discord.RichEmbed()
         .setDescription("Reports")
@@ -119,7 +113,6 @@ bot.on("message", function(message) {
 
         message.delete.catch(O_o=>{});
         reportchannel.send(reportembed);
-        message.channel.send(reportmsg);
         break;
 
         case "meme":
