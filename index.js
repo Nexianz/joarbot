@@ -56,8 +56,8 @@ bot.on("message", function(message) {
         message.channel.send(hjelp);
         break;
             
-        case "bendik":
-        message.channel.send("Bendik er rar");
+        case "liamogmathias":
+        message.channel.send("dette er noen veldig snille gutter");
         break;
 
         case "test":
