@@ -102,16 +102,15 @@ bot.on("message", function(message) {
         let reportembed = new Discord.RichEmbed()
         .setDescription("Reports")
         .setColor("0x00FFFF")
-        .addField("Rapportert", rUser.get + "med ID" + rUser.id)
-        .addField("Rapportert av", message.author + "med ID:" + message.author.id)
+        .addField("Rapportert", rUser.get)
+        .addField("Rapportert av", message.author)
         .addField("Kanal", message.channel)
         .addField("Tid", message.createdAt)
         .addField("Grunn", reason);
 
-        var reportchannel = message.guild.channels.find('name', "reports");
+        let reportchannel = message.guild.channels.find('name', "reports");
         if(!reportchannel) return message.channel.send("Kunne ikke finne rapport kanal, kontakt en admin");
 
-        message.delete.catch(O_o=>{});
         reportchannel.send(reportembed);
         break;
 
