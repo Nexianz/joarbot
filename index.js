@@ -95,11 +95,11 @@ bot.on("message", function(message) {
         break;
             
         case "report":
-        var rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+        let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if(!rUser) return message.channel.send("Kunne ikke finne spilleren, bruk **-report (Spiller) (Grunn)**");
-        var reason = args.join(" ").slice(22);
+        let reason = args.join(" ").slice(22);
 
-        var reportembed = new Discord.RichEmbed()
+        let reportembed = new Discord.RichEmbed()
         .setDescription("Reports")
         .setColor("0x00FFFF")
         .addField("Rapportert", rUser.get + "med ID" + rUser.id)
