@@ -103,7 +103,7 @@ bot.on("message", function(message) {
         .setDescription("Reports")
         .setColor("0x00FFFF")
         .addField("Rapportert", rUser.get)
-        .addField("Rapportert av", ${message.author})
+        .addField("Rapportert av", '${message.author}')
         .addField("Kanal", message.channel)
         .addField("Tid", message.createdAt)
         .addField("Grunn", reason);
