@@ -112,7 +112,6 @@ bot.on("message", function(message) {
         if(!reportchannel) return message.channel.send("Kunne ikke finne rapport kanal, kontakt en admin");
 
         reportchannel.send(reportembed);
-        message.delete().catch(O_o=>{});
         message.channel.send("Tusen takk for din rapport, spilleren skal bli tatt hånd om så fort som mulig!");
         break;
 
