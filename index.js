@@ -108,7 +108,7 @@ bot.on("message", function(message) {
         .addField("Tid", message.createdAt)
         .addField("Grunn", reason);
 
-        var reportchannel = messgae.guild.channels.find('name', "reports");
+        var reportchannel = message.guild.channels.find('name', "reports");
         if(!reportchannel) return message.channel.send("Kunne ikke finne rapport kanal, kontakt en admin");
 
         message.delete.catch(O_o=>{});
