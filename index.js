@@ -116,13 +116,6 @@ bot.on("message", function(message) {
         break;
 
         case "meme":
-        let memeEmbed = new Discord.RichEmbed()
-        .setDescription("Meme")
-        .setColor("0x00FFFF")
-        .addField(if (args[0]) (fortunes[Math.floor(Math.random() * fortunes.length))]);
-        
-        message.channel.send(memeEmbed);
-        
         if (args[0]) message.channel.send(fortunes[Math.floor(Math.random() * fortunes.length)]);
         else message.channel.send("Det er en feil i koden, kontakt **Nexianz#8554**");
         break;
