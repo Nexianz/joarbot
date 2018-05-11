@@ -124,11 +124,6 @@ bot.on("message", function(message) {
         if (args[1]) message.channel.send("Jeg rater " + args[1] + " - " + "**" + (rates[Math.floor(Math.random() * rates.length)] + "**"));
         else message.channel.send("**Feil bruk!** *-rate (Ting)*");
         break;
-            
-        case "victor":
-        message.channel.send("Her er youtube kanalen til **VictorPlayz - NorskGaming**");
-        message.channel.send("https://www.youtube.com/channel/UCvLJq3-MLBuw8NSln_8h7mQ");
-        break;
 
         default:
         message.channel.send("*Feil kommando*, bruk **-hjelp**");
